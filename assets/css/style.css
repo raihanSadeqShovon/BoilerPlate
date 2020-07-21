@@ -85,6 +85,9 @@ label {
   margin-top: 3px;
   font-size: 12px;
 }
+.padd-1 {
+  padding: 80px 0 50px;
+}
 .boxed_wrapper {
   position: relative;
   margin: 0 auto;
@@ -235,12 +238,15 @@ a.read-more:hover {
   background-color: #000;
   color: #fff;
 }
+.item {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .item::after,
 .item::before
 {
-content: "";
+content: " ";
 }
-
 .active .item::before {
   transition-delay: .6s;
   transform: skew(-35deg) translateX(0);
@@ -251,10 +257,9 @@ content: "";
   transform: skew(-35deg) translateX(0);
   opacity: 1;
 }
-
 .item::after,.item::before{
   position: absolute;
-    content: "";
+    content: " ";
     top: 0;
     left: -350px;
     right: 0;
@@ -264,14 +269,12 @@ content: "";
     transition: all 1s ease;
     opacity: 0;
 }
-
 .item::after {
   width: 1400px;
   background-color: rgba(31,110,200,.85);
   -webkit-transform: skew(-35deg) translateX(-150px);
   transform: skew(-35deg) translateX(-150px);
 }
-
 .item::before {
   width: 1500px;
   background-color: rgba(255,255,255,.3);
@@ -281,15 +284,84 @@ content: "";
 .slide-up .row {
   height: 615px;
 }
-
 .single-slide-wrapper {
   position: relative;
   z-index: 20;
 }
+/* Service area starts here */
+.section-pbt-xl {
+  padding: 150px 0;
+}
+.bg_image-1 {
+  background-image: url(../images/bg_image-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.text-center {
+  text-align: center;
+}
+.move-up .animate {
+  transform: translateY(100px);
+  animation: moveVertical .65s ease forwards;
+}
+.section-title h1 {
+  margin-bottom: 40px;
+  letter-spacing: 5px;
+  color: lightsteelblue;
+  text-transform: uppercase;
+}
+.section-title h3 {
+  font-size: 50px;
+  margin-bottom: 0;
+  line-height: 1.50;
+  max-width: 100%;
+}
+.mt--30 {
+  margin-top: 30px;
+}
+.mt--70 {
+  margin-top: 70px;
+}
+.mb--30 {
+  margin-bottom: 30px;
+}
+.service--1 {
+  position: relative;
+  padding: 60px 35px 64px;
+  background: #fff;
+  -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+  -o-transition: all .3s cubic-bezier(.645,.045,.355,1);
+  transition: all .3s cubic-bezier(.645,.045,.355,1);
+  z-index: 1;
+}
+.icons i {
+  color: blue;
+  font-size: 50px;
+}
+.service {
+  border: 1px black solid;
+  border-color: #eee;
+}
+.content h4 {
+  margin-bottom: 18px;
+}
+.srv-btn {
+  margin-top: 45px;
 
-
-/* @keyframes bottomtop {
-  0%   {background-color:blue; left:0px; top:200px;}
-  50%  {background-color:blue; left:0px; top:200px;}
-  100% {background-color:blue; left:0px; top:0px;}
-} */
+}
+.srv-btn:hover {
+  text-decoration: none;
+}
+.service:hover {
+  border-color: blue;
+  animation: moveVertical .65s ease forwards;
+  transform: translateY(-10px);
+}
+.srv-btn i {
+  margin-left: 15px;
+}
+.srv-btn span {
+  color: #000;
+}
+/* Service area end here */
