@@ -82,3 +82,17 @@ $(function () {
     activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
   });
 });
+
+
+const x = [2,32,258,125,24,61,98]
+
+for(let a=0; a < x.length ;a++) {
+  console.log(x[a]);
+}
+
+
+let person = {"name":"Raihan","age": 30, "address": "d/21"}
+console.log(person.name + " is " + person.age + "years old.");
+
+let d = document.getElementById("date").innerHTML=Date();
+console.log(d);
